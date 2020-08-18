@@ -11,5 +11,5 @@ wget -qO- https://raw.githubusercontent.com/web6-fr/code-insiders-nautilus/maste
 ## Uninstall Extension
 
 ```
-rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
+rm -f ~/.local/share/nautilus-python/extensions/code-insiders-nautilus.py
 ```
