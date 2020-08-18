@@ -13,10 +13,10 @@ from subprocess import call
 import os
 
 # path to vscode
-VSCODE = 'code'
+VSCODE = 'code-insiders'
 
 # what name do you want to see in the context menu?
-VSCODENAME = 'Code'
+VSCODENAME = 'Code Insiders'
 
 # always create new window?
 NEWWINDOW = False
@@ -44,9 +44,9 @@ class VSCodeExtension(GObject.GObject, Nautilus.MenuProvider):
 
     def get_file_items(self, window, files):
         item = Nautilus.MenuItem(
-            name='VSCodeOpen',
+            name='VSCodeInsidersOpen',
             label='Open In ' + VSCODENAME,
-            tip='Opens the selected files with VSCode'
+            tip='Opens the selected files with VSCode-Insiders'
         )
         item.connect('activate', self.launch_vscode, files)
 
@@ -54,9 +54,9 @@ class VSCodeExtension(GObject.GObject, Nautilus.MenuProvider):
 
     def get_background_items(self, window, file_):
         item = Nautilus.MenuItem(
-            name='VSCodeOpenBackground',
+            name='VSCodeInsidersOpenBackground',
             label='Open ' + VSCODENAME + ' Here',
-            tip='Opens VSCode in the current directory'
+            tip='Opens VSCode-Insiders in the current directory'
         )
         item.connect('activate', self.launch_vscode, [file_])
 
