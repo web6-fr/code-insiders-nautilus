@@ -13,3 +13,7 @@ wget -qO- https://raw.githubusercontent.com/web6-fr/code-insiders-nautilus/maste
 ```
 rm -f ~/.local/share/nautilus-python/extensions/code-insiders-nautilus.py
 ```
+
+## Source
+
+https://github.com/harry-cpp/code-nautilus
